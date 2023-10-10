@@ -7,7 +7,7 @@ class Car{
        this.year = year;
        this.price = price;
     } 
-
+    // Generates the Car Card 
     generateHTML = () => {
         return `<div class="car-card"> 
         <img src="${this.img}" alt="${this.model}">
@@ -16,6 +16,7 @@ class Car{
     }
 }
 
+// Car list
 const cars_List = [ 
     new Car("./img/fiat.png","Fiat", "Blue", "2015", "45000"),
     new Car("./img/ford.webp","Ford", "Black", "2001", "55000"),
@@ -28,8 +29,7 @@ const cars_List = [
     new Car("./img/lambo.webp","Lambogini", "Red", "2005", "150000"),
     new Car("./img/cetrone.webp","Citroen", "Orange", "2023", "90000"),
 ]
-
-// console.log(fiat);
+// Adds the cars into HTML 
 const addCar = () => {
 
     let carContainer = document.getElementById("container")
@@ -39,5 +39,5 @@ const addCar = () => {
 };
 
 
-
+// Calls the function
 addCar();
