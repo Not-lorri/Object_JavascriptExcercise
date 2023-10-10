@@ -14,7 +14,7 @@ class Car{
         <h2 class="bruv"> <br> Model: ${this.model} <br> Color: ${this.color} <br> Year: ${this.year} <br> Price: USD ${this.price} </h2>
         </div>`;
     }
-}
+};
 
 // Car list
 const cars_List = [ 
@@ -28,7 +28,7 @@ const cars_List = [
     new Car("./img/suzuki.jpeg","Suzuki", "Lightblue", "2009", "45500"),
     new Car("./img/lambo.webp","Lambogini", "Red", "2005", "150000"),
     new Car("./img/cetrone.webp","Citroen", "Orange", "2023", "90000"),
-]
+];
 // Adds the cars into HTML 
 const addCar = () => {
 
