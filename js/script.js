@@ -8,7 +8,7 @@ class Car{
        this.price = price;
     } 
 
-    generateHTML= () => {
+    generateHTML = () => {
         return `<div class="car-card"> 
         <img src="${this.img}" alt="${this.model}">
         <h2 class="bruv"> <br> Model: ${this.model} <br> Color: ${this.color} <br> Year: ${this.year} <br> Price: USD ${this.price} </h2>
